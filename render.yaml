@@ -2,4 +2,5 @@ services:
   - type: web
     name: shin-thant-aung-personal-site
     runtime: static
-    staticPublishPath: .
+    buildCommand: npm run build
+    staticPublishPath: out
