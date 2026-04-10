@@ -5,8 +5,8 @@ export default function ExperiencePage() {
   return (
     <SectionContainer
       eyebrow="Experience"
-      title="Leadership across strategy, transactions, and transformation"
-      description="A track record of advising executives and investors through multi-market growth and performance challenges."
+      title="Leadership experience across strategy and transformation"
+      description="Track record covering market entry strategy, investment validation, and strategy execution in ASEAN and APAC markets."
     >
       <Timeline />
     </SectionContainer>

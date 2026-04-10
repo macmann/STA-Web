@@ -1,116 +1,148 @@
 export const profile = {
-  name: "Adrian Tan",
-  title: "Founder & CEO, STA Advisory",
+  name: "Shin Thant Aung",
+  title: "Strategy Consultant | ASEAN Market Specialist | Business Transformation Advisor",
   positioning:
-    "Strategy consultant helping ASEAN leaders unlock growth, transform portfolios, and execute high-stakes decisions with confidence.",
+    "Trusted advisor to corporate and investment leaders on market entry, investment validation, and strategy execution across ASEAN.",
   intro:
-    "I work with multinational corporations, investors, and boards across Southeast Asia to shape market-entry strategy, performance transformation, and long-term value creation.",
+    "Founder and CEO of Sagasia Consulting Company Limited, with more than 10 years of experience supporting multinational corporations, regional conglomerates, and institutional clients on high-priority growth and transformation decisions.",
   metrics: [
-    { label: "Projects delivered", value: "50+" },
-    { label: "ASEAN markets", value: "10" },
-    { label: "C-suite workshops", value: "120+" }
+    { label: "Consulting projects", value: "50+" },
+    { label: "Emerging market expertise", value: "10+ Years" },
+    { label: "Cross-industry perspective", value: "Multi-Sector" }
   ],
   contact: {
-    email: "adrian@sta-advisory.com",
-    linkedin: "https://www.linkedin.com/in/adriantan"
+    email: "shin@sagasiaconsulting.com",
+    linkedin: "https://www.linkedin.com/in/shinthantaung?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   }
 };
 
 export const biography = {
   summary: [
-    "Adrian Tan is a strategy and transformation advisor with over 15 years of regional experience guiding enterprise leaders through complex growth and investment decisions.",
-    "His approach combines board-level strategy, data-driven execution, and disciplined financial thinking to translate ambition into measurable outcomes.",
-    "He is trusted by conglomerates, private equity investors, and multinational operators navigating ASEAN expansion and portfolio repositioning."
+    "Shin Thant Aung is a strategy consultant with over 10 years of experience advising businesses across Southeast Asia on expansion, investment strategy, and operational transformation.",
+    "As Founder and CEO of Sagasia Consulting Company Limited, he works with multinational corporations, regional conglomerates, and institutional clients to turn strategic priorities into practical execution plans.",
+    "His sector experience spans healthcare, automotive, financial services, energy, and technology, with more than 50 consulting engagements delivered across ASEAN."
   ],
   education: [
-    "MBA, INSEAD",
-    "BEng, National University of Singapore",
-    "Executive Program in Corporate Finance, London Business School"
+    "Applied Accounting, Oxford Brookes University",
+    "Background in Mechatronics Engineering"
   ],
-  positioning: "A rare blend of strategy, technical depth, and financial rigor tailored for high-impact leadership decisions."
+  positioning:
+    "A strategy advisor combining financial discipline, analytical rigor, and technical grounding to support executive-level decision-making in ASEAN."
 };
 
 export const experiences = [
   {
-    period: "2021 — Present",
+    period: "Current",
     role: "Founder & CEO",
-    company: "STA Advisory",
+    company: "Sagasia Consulting Company Limited",
     achievements: [
-      "Built a regional strategy advisory platform serving cross-border clients in automotive, healthcare, and energy.",
-      "Led growth strategy and M&A diligence programs for investors evaluating ASEAN expansion targets.",
-      "Delivered board-level transformation agendas that improved EBITDA performance and execution discipline."
+      "Lead a strategy and market intelligence advisory platform serving ASEAN and broader APAC growth priorities.",
+      "Design market entry strategies and validate expansion opportunities for corporate and investor clients.",
+      "Translate strategic priorities into execution roadmaps using primary research, competitor intelligence, and commercial validation."
     ]
   },
   {
-    period: "2017 — 2021",
-    role: "Director, Strategy & Operations",
-    company: "Global Consulting Firm",
+    period: "Previous",
+    role: "Director",
+    company: "YCP Solidiance",
     achievements: [
-      "Managed multi-country strategy engagements for Fortune 500 clients across Southeast Asia.",
-      "Designed operating model transformations that accelerated decision cycles and margin improvement.",
-      "Mentored consulting teams and institutionalized best practices for executive stakeholder management."
+      "Led strategic consulting engagements across ASEAN markets.",
+      "Advised clients on market entry, business expansion, and transformation priorities.",
+      "Directed due diligence, valuation analysis, and cross-border project execution."
     ]
   },
   {
-    period: "2011 — 2017",
-    role: "Senior Manager",
-    company: "Big Four Advisory",
+    period: "Previous",
+    role: "Consulting Professional",
+    company: "Big Four Firm",
     achievements: [
-      "Delivered transaction strategy, commercial due diligence, and post-merger integration programs.",
-      "Built analytics-enabled growth playbooks used by regional client leadership teams.",
-      "Supported sovereign-linked entities and private investors on strategic capital allocation."    ]
+      "Delivered financial advisory and consulting services for multinational and institutional clients.",
+      "Led transaction advisory and strategic finance workstreams.",
+      "Supported high-stakes decisions with structured analysis and executive-ready recommendations."
+    ]
   }
 ];
 
 export const industries = [
   {
     name: "Automotive & EV",
-    capabilities: ["Market entry and GTM design", "EV ecosystem strategy", "Dealer and channel transformation"]
+    capabilities: ["EV market strategy", "Battery supply chain analysis", "Policy impact assessment"]
   },
   {
-    name: "Healthcare",
-    capabilities: ["Provider growth strategy", "Care delivery operating model", "Digital health investment themes"]
+    name: "Healthcare & Pharmaceuticals",
+    capabilities: ["Market entry strategy", "Distributor identification", "Medical tourism strategy"]
   },
   {
     name: "Financial Services",
-    capabilities: ["Portfolio strategy", "Customer-led proposition design", "Risk-adjusted growth planning"]
+    capabilities: ["Risk and compliance strategy", "Market expansion strategy", "Digital transformation"]
   },
   {
-    name: "Energy",
-    capabilities: ["Transition pathway strategy", "Commercial optimization", "Regional partnerships and scaling"]
+    name: "Energy & Infrastructure",
+    capabilities: ["Energy storage systems (ESS)", "Demand-supply analysis", "Investment feasibility"]
   }
 ];
 
 export const insights = [
   {
-    title: "Winning in ASEAN EV Transition",
-    category: "Whitepaper",
-    excerpt: "A practical playbook for automakers and investors building resilient EV growth strategies in Southeast Asia."
+    title: "Market Entry Strategies in ASEAN Healthcare",
+    category: "Healthcare",
+    excerpt: "Preview: Practical considerations for growth strategy and market prioritization.",
+    status: "Coming Soon"
   },
   {
-    title: "Healthcare Growth Under Cost Pressure",
-    category: "Article",
-    excerpt: "How provider groups can balance affordability, quality, and sustainable expansion in emerging markets."
+    title: "Trends in Medical Tourism",
+    category: "Healthcare",
+    excerpt: "Preview: Strategic implications for providers and investors in regional healthcare ecosystems.",
+    status: "Coming Soon"
   },
   {
-    title: "Capital Allocation for Volatile Markets",
-    category: "Executive Brief",
-    excerpt: "Frameworks for boards and investors to prioritize strategic bets with stronger downside protection."
+    title: "EV Adoption in Southeast Asia",
+    category: "Automotive / EV",
+    excerpt: "Preview: Adoption drivers, market barriers, and execution priorities for industry participants.",
+    status: "Coming Soon"
+  },
+  {
+    title: "Battery Supply Chain Challenges",
+    category: "Automotive / EV",
+    excerpt: "Preview: How to navigate sourcing risks and capability gaps across emerging EV value chains.",
+    status: "Coming Soon"
+  },
+  {
+    title: "Digital Banking Transformation",
+    category: "Financial Services",
+    excerpt: "Preview: Strategic pathways for incumbents and challengers in evolving ASEAN markets.",
+    status: "Coming Soon"
+  },
+  {
+    title: "B2B Payment Challenges in Asia",
+    category: "Financial Services",
+    excerpt: "Preview: Priority issues in infrastructure, interoperability, and client experience.",
+    status: "Coming Soon"
   }
 ];
 
 export const speaking = {
-  conferences: [
-    "ASEAN Leadership Summit",
-    "Future Mobility Forum Asia",
-    "Healthcare Transformation Congress"
-  ],
   publications: [
-    "Regional strategy commentary in leading business journals",
-    "Contributed thought leadership for investor strategy reports"
+    "Healthcare Asia Magazine",
+    "YCP",
+    "Asian Banking and Finance",
+    "Retail Asia",
+    "Insurance Asia",
+    "Civic Exchange",
+    "Issuu — Hong Kong Business",
+    "Next Continent",
+    "Healthserv.net",
+    "Singapore Business Review"
   ],
   media: [
-    "Featured interviews on market outlook and sector disruption",
-    "Panel discussions on transformation and competitive advantage"
+    "Asia Battery Technology Conference",
+    "Escom events"
+  ],
+  engagements: [
+    "3rd ASEAN Battery Technology Conference 2025",
+    "Malaysian International Healthcare (MIH) Megatrends 2025",
+    "Asian Banking & Finance and Insurance Asia Summit 2025",
+    "Phil Healthcare Summit 2024",
+    "Healthcare Asia Summit in Singapore"
   ]
 };

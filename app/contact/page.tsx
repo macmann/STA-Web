@@ -6,7 +6,7 @@ export default function ContactPage() {
     <SectionContainer
       eyebrow="Contact"
       title="Start a strategic conversation"
-      description="For advisory engagements, speaking requests, or investor collaboration, please get in touch."
+      description="Connect for advisory engagements, speaking invitations, or collaboration opportunities across ASEAN."
     >
       <div className="grid gap-8 md:grid-cols-2">
         <div className="space-y-4 rounded-xl border border-gray-200 bg-mist p-6 text-sm text-steel/85">
@@ -16,7 +16,7 @@ export default function ContactPage() {
           <p>
             <span className="font-semibold text-ink">LinkedIn:</span>{" "}
             <a href={profile.contact.linkedin} target="_blank" rel="noreferrer" className="text-accent hover:text-ink">
-              {profile.contact.linkedin}
+              linkedin.com/in/shinthantaung
             </a>
           </p>
         </div>

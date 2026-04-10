@@ -7,15 +7,15 @@ export default function HomePage() {
     <>
       <Hero />
       <SectionContainer
-        eyebrow="Trusted by Leaders"
-        title="Designed for high-consequence decisions"
-        description="I partner with C-suites, investors, and boards to make strategic moves that hold up under pressure."
+        eyebrow="Value Proposition"
+        title="Advisory support for strategic moves that require precision"
+        description="Supporting executive teams and investors with actionable strategy across ASEAN markets."
       >
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            "Portfolio and growth strategy for regional expansion",
-            "Commercial due diligence and investment thesis validation",
-            "Transformation programs with measurable value delivery"
+            "50+ consulting projects delivered across ASEAN markets",
+            "10+ years of emerging market consulting experience",
+            "Cross-industry advisory spanning healthcare, automotive, financial services, energy, and technology"
           ].map((item) => (
             <p key={item} className="rounded-lg border border-gray-200 p-5 text-sm leading-7 text-steel/85">
               {item}
