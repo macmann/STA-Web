@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: shin-thant-aung-personal-site
+    runtime: static
+    staticPublishPath: .

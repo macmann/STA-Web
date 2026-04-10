@@ -1,0 +1,101 @@
+:root {
+  --site-bg: #fff9f2;
+  --surface: #fff3e3;
+  --surface-2: #fff7ef;
+  --text: #352015;
+  --muted: #7b5a46;
+  --accent: #b85d23;
+  --accent-dark: #8f4315;
+  --border: #f0d2b4;
+}
+
+html,
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--site-bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+.py-lg-6 {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.site-nav {
+  background: rgba(255, 247, 236, 0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand,
+.nav-link,
+.section-title,
+.text-accent {
+  color: var(--accent-dark) !important;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #fff3e1 0%, #ffe8c9 100%);
+}
+
+.hero-badge {
+  background: #ffd9a8;
+  color: var(--accent-dark);
+  padding: 0.5rem 0.85rem;
+}
+
+.metric-card,
+.custom-card {
+  background: #fffdf9;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(126, 70, 28, 0.1);
+}
+
+.metric-card {
+  padding: 1rem;
+}
+
+.metric-card h3 {
+  color: var(--accent);
+  font-size: 1.35rem;
+}
+
+.section-soft {
+  background: var(--surface-2);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.two-col-list {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.footer-section {
+  background: linear-gradient(180deg, #fff0dc 0%, #ffe8cc 100%);
+  border-top: 1px solid var(--border);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+@media (max-width: 991.98px) {
+  .two-col-list {
+    columns: 1;
+  }
+}
