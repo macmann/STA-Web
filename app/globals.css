@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-steel antialiased;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+.section-spacing {
+  @apply py-16 md:py-24;
+}
