@@ -5,9 +5,9 @@ import { industries } from "@/data/siteContent";
 export default function ExpertisePage() {
   return (
     <SectionContainer
-      eyebrow="Expertise"
-      title="Sector depth with functional precision"
-      description="Focused advisory across industries where strategic clarity and disciplined execution define market leadership."
+      eyebrow="Expertise & Industries"
+      title="Sector-focused capabilities for complex growth decisions"
+      description="Structured advisory capabilities aligned to high-priority sectors across ASEAN."
     >
       <div className="grid gap-6 md:grid-cols-2">
         {industries.map((industry) => (

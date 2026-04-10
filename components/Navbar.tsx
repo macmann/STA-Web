@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { profile } from "@/data/siteContent";
 
 const navItems = [
   ["Home", "/"],
@@ -20,7 +21,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-gray-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-10">
         <Link href="/" className="font-serif text-xl text-ink">
-          Adrian Tan
+          {profile.name}
         </Link>
         <nav>
           <ul className="hidden gap-6 md:flex">
