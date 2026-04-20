@@ -4,7 +4,7 @@ export const profile = {
   positioning:
     "Trusted advisor to corporate and investment leaders on market entry, investment validation, and strategy execution across ASEAN.",
   intro:
-    "Founder and CEO of Sagasia Consulting Company Limited, with more than 10 years of experience supporting multinational corporations, regional conglomerates, and institutional clients on high-priority growth and transformation decisions.",
+    "Management and Strategy Consultant, with more than 10 years of experience supporting multinational corporations, regional conglomerates, and institutional clients on high-priority growth and transformation decisions.",
   metrics: [
     { label: "Consulting projects", value: "50+" },
     { label: "Emerging market expertise", value: "10+ Years" },
@@ -19,7 +19,7 @@ export const profile = {
 export const biography = {
   summary: [
     "Shin Thant Aung is a strategy consultant with over 10 years of experience advising businesses across Southeast Asia on expansion, investment strategy, and operational transformation.",
-    "As Founder and CEO of Sagasia Consulting Company Limited, he works with multinational corporations, regional conglomerates, and institutional clients to turn strategic priorities into practical execution plans.",
+    "He works with multinational corporations, regional conglomerates, and institutional clients to turn strategic priorities into practical execution plans.",
     "His sector experience spans healthcare, automotive, financial services, energy, and technology, with more than 50 consulting engagements delivered across ASEAN."
   ],
   education: [
@@ -33,12 +33,12 @@ export const biography = {
 export const experiences = [
   {
     period: "Current",
-    role: "Founder & CEO",
-    company: "Sagasia Consulting Company Limited",
+    role: "Management & Strategy Consultant",
+    company: "Independent Advisory",
     achievements: [
-      "Lead a strategy and market intelligence advisory platform serving ASEAN and broader APAC growth priorities.",
-      "Design market entry strategies and validate expansion opportunities for corporate and investor clients.",
-      "Translate strategic priorities into execution roadmaps using primary research, competitor intelligence, and commercial validation."
+      "Lead strategy and market intelligence engagements across ASEAN and broader APAC growth markets.",
+      "Develop market entry strategies and assess expansion opportunities for corporate and investor clients.",
+      "Translate strategic priorities into execution roadmaps through primary research, competitive intelligence, and commercial validation."
     ]
   },
   {
