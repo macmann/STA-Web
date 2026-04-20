@@ -18,9 +18,9 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gray-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-accent/30 bg-ink/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-10">
-        <Link href="/" className="font-serif text-xl text-ink">
+        <Link href="/" className="font-serif text-xl text-white">
           {profile.name}
         </Link>
         <nav>
@@ -29,7 +29,7 @@ export function Navbar() {
               const active = pathname === href;
               return (
                 <li key={href}>
-                  <Link href={href} className={`text-sm ${active ? "text-ink" : "text-steel/70 hover:text-ink"}`}>
+                  <Link href={href} className={`text-sm ${active ? "text-white" : "text-white/70 hover:text-accent"}`}>
                     {label}
                   </Link>
                 </li>

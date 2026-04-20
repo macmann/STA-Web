@@ -37,7 +37,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          className="grid grid-cols-1 gap-4 rounded-2xl border border-gray-200 bg-mist p-6"
+          className="grid grid-cols-1 gap-4 rounded-2xl border border-steel/20 bg-mist p-6"
         >
           {profile.metrics.map((metric) => (
             <div key={metric.label} className="border-b border-gray-300 pb-4 last:border-none last:pb-0">

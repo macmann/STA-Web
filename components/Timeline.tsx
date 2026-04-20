@@ -2,7 +2,7 @@ import { experiences } from "@/data/siteContent";
 
 export function Timeline() {
   return (
-    <ol className="space-y-10 border-l border-gray-200 pl-6">
+    <ol className="space-y-10 border-l border-steel/20 pl-6">
       {experiences.map((item) => (
         <li key={`${item.company}-${item.period}`} className="relative">
           <span className="absolute -left-[31px] top-2 h-3 w-3 rounded-full bg-accent" aria-hidden />
