@@ -42,6 +42,7 @@ export default function HomePage() {
               alt="Shin Thant Aung speaking at MIH Megatrends 2024"
               width={1200}
               height={900}
+              unoptimized
               className="h-full w-full object-cover"
             />
           </div>
