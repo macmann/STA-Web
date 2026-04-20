@@ -123,26 +123,127 @@ export const insights = [
 
 export const speaking = {
   publications: [
-    "Healthcare Asia Magazine",
-    "YCP",
-    "Asian Banking and Finance",
-    "Retail Asia",
-    "Insurance Asia",
-    "Civic Exchange",
-    "Issuu — Hong Kong Business",
-    "Next Continent",
-    "Healthserv.net",
-    "Singapore Business Review"
+    {
+      title: "Healthcare Asia Magazine",
+      url: "https://healthcareasiamagazine.com/contributor/shin-thant-aung"
+    },
+    {
+      title: "YCP",
+      url: "https://ycpsolidiance.com/lp/a02"
+    },
+    {
+      title: "Asian Banking and Finance",
+      url: "https://asianbankingandfinance.net/event/asian-banking-finance-and-insurance-asia-summit-thailand-february-18-2025"
+    },
+    {
+      title: "Retail Asia",
+      url: "https://retailasia.com/contributors?page=9"
+    },
+    {
+      title: "Insurance Asia",
+      url: "https://insuranceasia.com/event/insurance-asia-forum-bangkok-april-23-2024"
+    },
+    {
+      title: "Civic Exchange",
+      url: "https://civic-exchange.org/hong-kong-plans-wider-primary-care-network-in-reform-push/"
+    },
+    {
+      title: "Healthcare Asia (Issuu)",
+      url: "https://issuu.com/charlton_media/docs/hca-h1-2023/32"
+    },
+    {
+      title: "Next Continent",
+      url: "https://www.nextcontinent.net/wp-content/uploads/2024/10/Nextcontinent-AI-in-Healthcare-Whitepaper.pdf"
+    },
+    {
+      title: "Healthserv.net",
+      url: "https://healthserv.net/healthupdate/222328"
+    },
+    {
+      title: "Singapore Business Review",
+      url: "https://sbr.com.sg/healthcare/exclusive/singapore-urged-order-5-minute-minimum-telemedicine-calls"
+    }
   ],
   media: [
-    "Asia Battery Technology Conference",
-    "Escom events"
+    {
+      title: "Asia Battery Technology Conference",
+      url: "https://www.aseanbatteryev.com/category/panelists-moderators/"
+    },
+    {
+      title: "Escom Events",
+      url: "https://escom-events.com/emobilitythailandsummit"
+    }
   ],
   engagements: [
-    "3rd ASEAN Battery Technology Conference 2025",
-    "Malaysian International Healthcare (MIH) Megatrends 2025",
-    "Asian Banking & Finance and Insurance Asia Summit 2025",
-    "Phil Healthcare Summit 2024",
-    "Healthcare Asia Summit in Singapore"
+    {
+      title: "3rd ASEAN Battery Technology Conference 2025",
+      url: "https://www.linkedin.com/posts/ycpprofessional_ycp-evtech-batteryinnovation-ugcPost-7373236386855862272-00h3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACdE1pMBxVsyKXJR-UrNAqdhMsmzvH-onLs"
+    },
+    {
+      title: "Malaysian International Healthcare (MIH) Megatrends 2025",
+      url: "https://www.linkedin.com/posts/ycpprofessional_healthcare-ai-mihmegatrends-ugcPost-7402156967714328576-B73X?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACdE1pMBxVsyKXJR-UrNAqdhMsmzvH-onLs"
+    },
+    {
+      title: "Asian Banking & Finance and Insurance Asia Summit 2025",
+      url: "https://www.linkedin.com/posts/ycpprofessional_last-february-2025-our-director-shin-ugcPost-7304768744336093185-9940?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACdE1pMBxVsyKXJR-UrNAqdhMsmzvH-onLs"
+    },
+    {
+      title: "Phil Healthcare Summit 2024",
+      url: "https://www.linkedin.com/posts/ycpprofessional_last-april-18-our-healthcare-expert-and-activity-7188413680118632448-3QkT"
+    },
+    {
+      title: "Healthcare Asia Summit in Singapore",
+      url: "https://www.linkedin.com/company/healthcare-asia/"
+    }
+  ],
+  gallery: [
+    {
+      title: "2024 Insurance Asia",
+      imageUrl: "https://i.ibb.co/vxQBK5WC/2024-Insurance-Asia.png"
+    },
+    {
+      title: "ASEAN Battery Technology Conference",
+      imageUrl: "https://i.ibb.co/yFCfFWVr/ASEAN-Battery-Technology-Conference.png"
+    },
+    {
+      title: "Asia EV Tech Summit 2023",
+      imageUrl: "https://i.ibb.co/W4gQyRHg/Asia-EV-Tech-Summit-2023.png"
+    },
+    {
+      title: "Asia EV Tech Summit 2024",
+      imageUrl: "https://i.ibb.co/gbTX2MMr/Asia-EV-Tech-Summit-2024.png"
+    },
+    {
+      title: "Asia EV Tech Summit 2025",
+      imageUrl: "https://i.ibb.co/h1c9G1T3/Asia-EV-Tech-Summit-2025.png"
+    },
+    {
+      title: "Healthcare Asia Magazine",
+      imageUrl: "https://i.ibb.co/bjXBpW12/Healthcare-Asia-Magazine.png"
+    },
+    {
+      title: "Healthcare Asia Summit",
+      imageUrl: "https://i.ibb.co/CK2cfzRr/Healthcare-Asia-Summit.png"
+    },
+    {
+      title: "Healthcare Asia",
+      imageUrl: "https://i.ibb.co/SwHLFHZH/Healthcare-Asia.png"
+    },
+    {
+      title: "MIH Megatrends 2024",
+      imageUrl: "https://i.ibb.co/C3gcFdy5/MIH-Megatrends-2024.jpg"
+    },
+    {
+      title: "Retail Asia 2",
+      imageUrl: "https://i.ibb.co/7HvpTdC/Retail-Asia-2.webp"
+    },
+    {
+      title: "Retail Asia",
+      imageUrl: "https://i.ibb.co/LWywMD3/Retail-Asia.png"
+    },
+    {
+      title: "MIH Megatrends 2025",
+      imageUrl: "https://i.ibb.co/6cvL5RjK/MIH-Megatrends-2025.jpg"
+    }
   ]
 };
