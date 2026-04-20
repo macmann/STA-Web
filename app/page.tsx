@@ -19,7 +19,7 @@ export default function HomePage() {
             "10+ years of emerging market consulting experience",
             "Cross-industry advisory spanning healthcare, automotive, financial services, energy, and technology"
           ].map((item) => (
-            <p key={item} className="rounded-lg border border-gray-200 p-5 text-sm leading-7 text-steel/85">
+            <p key={item} className="rounded-lg border border-steel/20 p-5 text-sm leading-7 text-steel/85">
               {item}
             </p>
           ))}
@@ -36,7 +36,7 @@ export default function HomePage() {
         description={biography.positioning}
       >
         <div className="grid gap-8 md:grid-cols-[1fr_1.1fr] md:items-start">
-          <div className="overflow-hidden rounded-xl border border-gray-200 bg-mist">
+          <div className="overflow-hidden rounded-xl border border-steel/20 bg-mist">
             <Image
               src="https://i.ibb.co/C3gcFdy5/MIH-Megatrends-2024.jpg"
               alt="Shin Thant Aung speaking at MIH Megatrends 2024"

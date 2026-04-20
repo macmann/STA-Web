@@ -8,10 +8,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0F172A",
-        steel: "#1F2937",
-        mist: "#F3F4F6",
-        accent: "#0F766E"
+        ink: "#0A0F1A",
+        steel: "#253044",
+        mist: "#EAF1FB",
+        accent: "#1D4ED8"
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],

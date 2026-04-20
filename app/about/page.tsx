@@ -12,7 +12,7 @@ export default function AboutPage() {
             </p>
           ))}
         </div>
-        <aside className="rounded-xl border border-gray-200 bg-mist p-6">
+        <aside className="rounded-xl border border-steel/20 bg-mist p-6">
           <h3 className="font-serif text-2xl text-ink">Education</h3>
           <ul className="mt-4 space-y-3 text-sm leading-7 text-steel/85">
             {biography.education.map((item) => (
