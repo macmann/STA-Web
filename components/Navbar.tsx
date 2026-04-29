@@ -25,7 +25,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-accent/30 bg-ink/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3 md:px-10">
-        <Link href="/" className="font-serif text-2xl leading-none text-white md:text-3xl">
+        <Link href="/" className="font-serif text-xl leading-none text-white md:text-2xl">
           {profile.name}
         </Link>
         <nav>
@@ -34,7 +34,7 @@ export function Navbar() {
               const active = pathname === href;
               return (
                 <li key={href}>
-                  <Link href={href} className={`text-base ${active ? "text-white" : "text-white/70 hover:text-white"}`}>
+                  <Link href={href} className={`text-sm ${active ? "text-white" : "text-white/70 hover:text-white"}`}>
                     {label}
                   </Link>
                 </li>
@@ -43,7 +43,7 @@ export function Navbar() {
             <li className="group relative">
               <Link
                 href="/speaking"
-                className={`text-base ${pathname.startsWith("/speaking") ? "text-white" : "text-white/70 hover:text-white"}`}
+                className={`text-sm ${pathname.startsWith("/speaking") ? "text-white" : "text-white/70 hover:text-white"}`}
               >
                 Voice & Contributions
               </Link>
