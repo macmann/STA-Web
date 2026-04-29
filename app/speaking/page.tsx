@@ -2,20 +2,23 @@ import { SectionContainer } from "@/components/SectionContainer";
 import { speaking } from "@/data/siteContent";
 
 function Tile({ title, imageUrl, link }: { title: string; imageUrl?: string; link?: string }) {
-  return (
-    <article className="overflow-hidden rounded-2xl border border-steel/20 bg-white/35">
+  const card = (
+    <article className="overflow-hidden rounded-2xl border border-steel/20 bg-white/35 transition hover:border-steel/40 hover:shadow-md">
       <div className="h-48 bg-white/40">
         {imageUrl ? <img src={imageUrl} alt={title} className="h-full w-full object-cover" loading="lazy" /> : null}
       </div>
       <div className="p-4 text-sm text-steel/85">
         <p className="min-h-12">{title}</p>
-        {link ? (
-          <a href={link} target="_blank" rel="noreferrer" className="mt-2 inline-block underline underline-offset-2">
-            Link
-          </a>
-        ) : null}
       </div>
     </article>
+  );
+
+  if (!link) return card;
+
+  return (
+    <a href={link} target="_blank" rel="noreferrer" className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-steel/60">
+      {card}
+    </a>
   );
 }
 
