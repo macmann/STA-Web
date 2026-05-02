@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { CSSProperties } from "react";
 
 type SectionContainerProps = {
   title?: string;
@@ -6,11 +7,12 @@ type SectionContainerProps = {
   description?: string;
   children: ReactNode;
   className?: string;
+  style?: CSSProperties;
 };
 
-export function SectionContainer({ title, eyebrow, description, children, className }: SectionContainerProps) {
+export function SectionContainer({ title, eyebrow, description, children, className, style }: SectionContainerProps) {
   return (
-    <section className={`section-spacing ${className ?? ""}`}>
+    <section className={`section-spacing ${className ?? ""}`} style={style}>
       <div className="mx-auto w-full max-w-6xl px-6 md:px-10">
         {(title || eyebrow || description) && (
           <header className="mb-10 max-w-3xl space-y-3">
