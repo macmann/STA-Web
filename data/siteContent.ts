@@ -11,6 +11,7 @@ export const profile = {
     { label: "Cross-industry perspective", value: "Multi-Sector" }
   ],
   contact: {
+    email: "contact@shinthantaung.com",
     linkedin: "https://www.linkedin.com/in/shinthantaung?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   }
 };
