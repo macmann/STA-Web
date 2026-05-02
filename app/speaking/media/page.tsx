@@ -1,7 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import { SectionContainer } from "@/components/SectionContainer";
 import { speaking } from "@/data/siteContent";
 
 export default function MediaPage() {
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const healthcareItems = speaking.publications.filter((item) =>
     ["Healthcare Asia Magazine", "Healthcare Asia (Issuu)"].includes(item.title)
   );
@@ -17,44 +21,37 @@ export default function MediaPage() {
       <section className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
         <h3 className="mb-5 font-serif text-3xl">Healthcare</h3>
         <div className="grid gap-5 md:grid-cols-3">
-          {healthcareItems.map((item) => (
-            <a
-              key={item.url}
-              href={item.url}
-              target="_blank"
-              rel="noreferrer"
-              className="block overflow-hidden rounded-xl border border-steel/20 bg-white/35 transition hover:border-steel/40 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-steel/60"
-            >
-              <article>
-                <div className="h-44 bg-white/40">{imageByTitle[item.title] ? <img src={imageByTitle[item.title]} alt={item.title} className="h-full w-full object-cover" /> : null}</div>
-                <div className="p-4">
-                  <p className="text-sm text-steel/85">{item.title}</p>
-                </div>
-              </article>
-            </a>
-          ))}
+          <article className="overflow-hidden rounded-xl border border-steel/20 bg-white/35 p-4 transition hover:border-steel/40 hover:shadow-md">
+            <div className="h-44 bg-white/40">{imageByTitle[healthcareItems[0]?.title] ? <img src={imageByTitle[healthcareItems[0].title]} alt="Healthcare" className="h-full w-full object-cover" /> : null}</div>
+            <div className="mt-4 space-y-2 text-sm text-steel/85">
+              {(expandedSections.healthcare ? healthcareItems : healthcareItems.slice(0, 1)).map((item) => (
+                <a key={item.url} href={item.url} target="_blank" rel="noreferrer" className="block underline underline-offset-2">
+                  {item.title}
+                </a>
+              ))}
+              {healthcareItems.length > 1 ? (
+                <button type="button" className="text-sm font-medium text-steel underline" onClick={() => setExpandedSections((prev) => ({ ...prev, healthcare: !prev.healthcare }))}>
+                  {expandedSections.healthcare ? "See Less" : "See More"}
+                </button>
+              ) : null}
+            </div>
+          </article>
         </div>
       </section>
 
       <section className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
         <h3 className="mb-5 font-serif text-3xl">Retail</h3>
         <div className="grid gap-5 md:grid-cols-3">
-          {retailItems.map((item) => (
-            <a
-              key={item.url}
-              href={item.url}
-              target="_blank"
-              rel="noreferrer"
-              className="block overflow-hidden rounded-xl border border-steel/20 bg-white/35 transition hover:border-steel/40 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-steel/60"
-            >
-              <article>
-                <div className="h-44 bg-white/40">{imageByTitle[item.title] ? <img src={imageByTitle[item.title]} alt={item.title} className="h-full w-full object-cover" /> : null}</div>
-                <div className="p-4">
-                  <p className="text-sm text-steel/85">{item.title}</p>
-                </div>
-              </article>
-            </a>
-          ))}
+          <article className="overflow-hidden rounded-xl border border-steel/20 bg-white/35 p-4 transition hover:border-steel/40 hover:shadow-md">
+            <div className="h-44 bg-white/40">{imageByTitle[retailItems[0]?.title] ? <img src={imageByTitle[retailItems[0].title]} alt="Retail" className="h-full w-full object-cover" /> : null}</div>
+            <div className="mt-4 space-y-2 text-sm text-steel/85">
+              {(expandedSections.retail ? retailItems : retailItems.slice(0, 1)).map((item) => (
+                <a key={item.url} href={item.url} target="_blank" rel="noreferrer" className="block underline underline-offset-2">
+                  {item.title}
+                </a>
+              ))}
+            </div>
+          </article>
         </div>
       </section>
     </SectionContainer>

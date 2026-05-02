@@ -53,25 +53,31 @@ function findMatchingLink(baseTitle: string, year?: number): string | undefined 
   return baseMatch?.url;
 }
 
-function Tile({ title, imageUrl, link }: { title: string; imageUrl?: string; link?: string }) {
+function GroupTile({ imageUrl, items, expanded, onToggle }: { imageUrl?: string; items: CategorizedItem[]; expanded: boolean; onToggle?: () => void }) {
+  const visibleItems = expanded ? items : items.slice(0, 1);
+  const showToggle = items.length > 1;
+
   const card = (
-    <article className="overflow-hidden rounded-2xl border border-steel/20 bg-white/35 transition hover:border-steel/40 hover:shadow-md">
+    <article className="overflow-hidden rounded-2xl border border-steel/20 bg-white/35 p-4 transition hover:border-steel/40 hover:shadow-md">
       <div className="h-48 bg-white/40">
-        {imageUrl ? <img src={imageUrl} alt={title} className="h-full w-full object-cover" loading="lazy" /> : null}
+        {imageUrl ? <img src={imageUrl} alt={items[0].baseTitle} className="h-full w-full object-cover" loading="lazy" /> : null}
       </div>
-      <div className="p-4 text-sm text-steel/85">
-        <p className="min-h-12">{title}</p>
+      <div className="mt-4 space-y-2 text-sm text-steel/85">
+        {visibleItems.map((item) => (
+          <a key={item.title} href={item.link} target="_blank" rel="noreferrer" className="block underline underline-offset-2">
+            {item.title}
+          </a>
+        ))}
+        {showToggle ? (
+          <button type="button" className="pt-1 text-sm font-medium text-steel underline" onClick={onToggle}>
+            {expanded ? "See Less" : "See More"}
+          </button>
+        ) : null}
       </div>
     </article>
   );
 
-  if (!link) return card;
-
-  return (
-    <a href={link} target="_blank" rel="noreferrer" className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-steel/60">
-      {card}
-    </a>
-  );
+  return <div className="rounded-2xl focus-within:ring-2 focus-within:ring-steel/60">{card}</div>;
 }
 
 export default function SpeakingPage() {
@@ -109,25 +115,17 @@ export default function SpeakingPage() {
           <div className="grid gap-5 md:grid-cols-3">
             {section.groups.map((group) => {
               const latest = group[0];
-              const showToggle = group.length > 1;
               const groupKey = `${section.title}-${latest.baseTitle}`;
               const expanded = expandedGroups[groupKey] ?? false;
-              const visibleItems = showToggle && !expanded ? [latest] : group;
 
               return (
                 <div key={groupKey} className="space-y-2">
-                  {visibleItems.map((item) => (
-                    <Tile key={`${item.title}-${item.imageUrl}`} title={item.title} imageUrl={item.imageUrl} link={item.link} />
-                  ))}
-                  {showToggle ? (
-                    <button
-                      type="button"
-                      className="text-sm font-medium text-steel underline"
-                      onClick={() => setExpandedGroups((prev) => ({ ...prev, [groupKey]: !expanded }))}
-                    >
-                      {expanded ? "See Less" : "See More"}
-                    </button>
-                  ) : null}
+                  <GroupTile
+                    imageUrl={latest.imageUrl}
+                    items={group}
+                    expanded={expanded}
+                    onToggle={() => setExpandedGroups((prev) => ({ ...prev, [groupKey]: !expanded }))}
+                  />
                 </div>
               );
             })}
