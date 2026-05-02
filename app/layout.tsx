@@ -25,7 +25,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "Person",
     name: profile.name,
     jobTitle: profile.title,
-    email: profile.contact.email,
     url: profile.contact.linkedin
   };
 
