@@ -8,28 +8,36 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <SectionContainer
-        eyebrow="Value Proposition"
-        title="Advisory support for strategic moves that require precision"
-        description="Supporting executive teams and investors with actionable strategy across ASEAN markets."
+      <section
+        className="section-spacing border-b border-steel/15 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "linear-gradient(rgba(232, 238, 246, 0.84), rgba(232, 238, 246, 0.84)), url('https://i.ibb.co/4ZBhPbMy/bg.jpg')"
+        }}
       >
-        <div className="grid gap-6 md:grid-cols-3">
-          {[
-            "50+ consulting projects delivered across ASEAN markets",
-            "10+ years of emerging market consulting experience",
-            "Cross-industry advisory spanning healthcare, automotive, financial services, energy, and technology"
-          ].map((item) => (
-            <p key={item} className="rounded-lg border border-steel/20 p-5 text-sm leading-7 text-steel/85">
-              {item}
-            </p>
-          ))}
-        </div>
-        <div className="mt-8">
-          <Link href="/experience" className="text-sm font-semibold text-accent hover:text-ink">
-            View full experience →
-          </Link>
-        </div>
-      </SectionContainer>
+        <SectionContainer
+          eyebrow="Value Proposition"
+          title="Advisory support for strategic moves that require precision"
+          description="Supporting executive teams and investors with actionable strategy across ASEAN markets."
+          className="!py-0"
+        >
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              "50+ consulting projects delivered across ASEAN markets",
+              "10+ years of emerging market consulting experience",
+              "Cross-industry advisory spanning healthcare, automotive, financial services, energy, and technology"
+            ].map((item) => (
+              <p key={item} className="rounded-lg border border-steel/20 bg-white/35 p-5 text-sm leading-7 text-steel/85">
+                {item}
+              </p>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link href="/experience" className="text-sm font-semibold text-accent hover:text-ink">
+              View full experience →
+            </Link>
+          </div>
+        </SectionContainer>
+      </section>
       <SectionContainer
         eyebrow="About"
         title="Professional background"

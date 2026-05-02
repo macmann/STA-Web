@@ -6,7 +6,13 @@ import { profile } from "@/data/siteContent";
 
 export function Hero() {
   return (
-    <section className="section-spacing">
+    <section
+      className="section-spacing border-b border-steel/15 bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(232, 238, 246, 0.78), rgba(232, 238, 246, 0.78)), url('https://i.ibb.co/Kpj1K39D/Malaysia-International-Healthcare-MIH-Mega-Trends-2025-2.jpg')"
+      }}
+    >
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 md:grid-cols-[1.2fr_0.8fr] md:items-end md:px-10">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -37,7 +43,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          className="grid grid-cols-1 gap-4 rounded-2xl border border-steel/20 bg-mist p-6"
+          className="grid grid-cols-1 gap-4 rounded-2xl border border-steel/25 bg-white/40 p-6 backdrop-blur-[1px]"
         >
           {profile.metrics.map((metric) => (
             <div key={metric.label} className="border-b border-gray-300 pb-4 last:border-none last:pb-0">

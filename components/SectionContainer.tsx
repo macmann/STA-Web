@@ -5,11 +5,12 @@ type SectionContainerProps = {
   eyebrow?: string;
   description?: string;
   children: ReactNode;
+  className?: string;
 };
 
-export function SectionContainer({ title, eyebrow, description, children }: SectionContainerProps) {
+export function SectionContainer({ title, eyebrow, description, children, className }: SectionContainerProps) {
   return (
-    <section className="section-spacing">
+    <section className={`section-spacing ${className ?? ""}`}>
       <div className="mx-auto w-full max-w-6xl px-6 md:px-10">
         {(title || eyebrow || description) && (
           <header className="mb-10 max-w-3xl space-y-3">
