@@ -7,6 +7,7 @@ export default function ExperiencePage() {
       eyebrow="Experience"
       title="Leadership experience across strategy and transformation"
       description="Track record covering market entry strategy, investment validation, and strategy execution in ASEAN and APAC markets."
+      className="bg-[#dfe6f2]"
     >
       <Timeline />
     </SectionContainer>
