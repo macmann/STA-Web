@@ -132,7 +132,7 @@ export default function SpeakingPage() {
     },
     {
       title: "Insurance Summit 2025",
-      imageUrl: "https://i.ibb.co/CKqdng6z/Insurance-Summit-2025.png",
+      imageUrl: findGalleryImage("Insurance Asia Forum 2025"),
       linkText: "Asian Banking and Finance",
       href: findEngagementLink("Asian Banking and Finance")
     }
