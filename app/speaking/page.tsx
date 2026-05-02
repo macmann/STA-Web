@@ -102,7 +102,7 @@ export default function SpeakingPage() {
     },
     {
       title: "Fintech Festival Thailand 2023",
-      imageUrl: "https://i.ibb.co/NnVjC6X3/Fintech-Festival-Thailand-2023.png",
+      imageUrl: "https://i.ibb.co/gZCFXL7D/Fintech-Festival-Thailand-2023-3.jpg",
       linkText: "Fintech Festival Thailand 2023",
       href: findEngagementLink("YCP")
     }
