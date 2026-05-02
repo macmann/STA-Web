@@ -34,7 +34,7 @@ export const experiences = [
   {
     period: "Current",
     role: "Management & Strategy Consultant",
-    company: "Independent Advisory",
+    company: "SAGASIA Consulting",
     achievements: [
       "Lead strategy and market intelligence engagements across ASEAN and broader APAC growth markets.",
       "Develop market entry strategies and assess expansion opportunities for corporate and investor clients.",
@@ -54,7 +54,7 @@ export const experiences = [
   {
     period: "Previous",
     role: "Consulting Professional",
-    company: "Big Four Firm",
+    company: "KPMG",
     achievements: [
       "Delivered financial advisory and consulting services for multinational and institutional clients.",
       "Led transaction advisory and strategic finance workstreams.",
