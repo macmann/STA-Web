@@ -242,11 +242,11 @@ export const speaking = {
     },
     {
       title: "Retail Asia 2",
-      imageUrl: "https://i.ibb.co/7HvpTdC/Retail-Asia-2.webp"
+      imageUrl: "https://i.ibb.co/cKJxST8b/Retail-Asia-Forum-Bangkok-2024.jpg"
     },
     {
       title: "Retail Asia",
-      imageUrl: "https://i.ibb.co/LWywMD3/Retail-Asia.png"
+      imageUrl: "https://i.ibb.co/1YJ5vBw5/Retail-Asia-Summit-Singapore-2023.webp"
     },
     {
       title: "MIH Megatrends 2025",
