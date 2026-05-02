@@ -205,6 +205,10 @@ export const speaking = {
   ],
   gallery: [
     {
+      title: "2024 Insurance Asia",
+      imageUrl: "https://i.ibb.co/CKqdng6z/Insurance-Summit-2025.png"
+    },
+    {
       title: "Insurance Asia Forum 2025",
       imageUrl: "https://i.ibb.co/gZQbYZxC/Insurance-Summit-2025.png"
     },
