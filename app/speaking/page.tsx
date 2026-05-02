@@ -23,19 +23,37 @@ function Tile({ title, imageUrl, link }: { title: string; imageUrl?: string; lin
 }
 
 export default function SpeakingPage() {
+  const sections = [
+    { title: "Automotive", items: speaking.gallery.slice(2, 11) },
+    { title: "Healthcare", items: speaking.gallery.slice(5, 8) },
+    { title: "Retail", items: speaking.gallery.slice(9, 11) },
+    { title: "Others", items: speaking.gallery.slice(0, 2) }
+  ];
+
   return (
     <SectionContainer
       eyebrow="Voice & Contributions"
       title="Speaking Engagements"
       description="Event appearances across ASEAN growth sectors."
     >
+      {sections.map((section, sectionIdx) => (
+        <section key={section.title} className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
+          <h3 className="mb-4 font-serif text-3xl">{section.title}</h3>
+          <div className="grid gap-5 md:grid-cols-3">
+            {section.items.map((item, idx) => (
+              <Tile
+                key={item.title}
+                title={item.title}
+                imageUrl={item.imageUrl}
+                link={speaking.engagements[(idx + sectionIdx) % speaking.engagements.length]?.url}
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+
       <section className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
-        <h3 className="mb-4 font-serif text-3xl">Automotive</h3>
-        <div className="grid gap-5 md:grid-cols-3">
-          {speaking.gallery.slice(2, 8).map((item, idx) => (
-            <Tile key={item.title} title={item.title} imageUrl={item.imageUrl} link={speaking.engagements[idx % speaking.engagements.length]?.url} />
-          ))}
-        </div>
+        <h3 className="font-serif text-4xl text-white/35">Generated Design</h3>
       </section>
     </SectionContainer>
   );
