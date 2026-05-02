@@ -9,8 +9,7 @@ const navItems = [
   ["About", "/about"],
   ["Experience", "/experience"],
   ["Expertise", "/expertise"],
-  ["Insights", "/insights"],
-  ["Contact", "/contact"]
+  ["Insights", "/insights"]
 ] as const;
 
 const voiceItems = [
@@ -54,6 +53,11 @@ export function Navbar() {
                   </Link>
                 ))}
               </div>
+            </li>
+            <li>
+              <Link href="/contact" className={`text-sm ${pathname === "/contact" ? "text-white" : "text-white/70 hover:text-white"}`}>
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
