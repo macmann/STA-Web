@@ -2,16 +2,16 @@ import { experiences } from "@/data/siteContent";
 
 export function Timeline() {
   return (
-    <ol className="space-y-10 border-l border-steel/20 pl-6">
+    <ol className="space-y-3 border-l border-[#c9d4e5] pl-6">
       {experiences.map((item) => (
-        <li key={`${item.company}-${item.period}`} className="relative">
-          <span className="absolute -left-[31px] top-2 h-3 w-3 rounded-full bg-accent" aria-hidden />
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-steel/70">{item.period}</p>
-          <h3 className="mt-1 font-serif text-2xl text-ink">{item.role}</h3>
-          <p className="text-sm font-semibold text-accent">{item.company}</p>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-steel/85">
+        <li key={`${item.company}-${item.period}`} className="relative bg-[#d9e2f0]/70 px-5 py-4">
+          <span className="absolute -left-[31px] top-3 h-2.5 w-2.5 rounded-full bg-[#1e4ed8]" aria-hidden />
+          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#49576d]">{item.period}</p>
+          <h3 className="mt-1 font-serif text-[2rem]/[1.15] text-[#1f2937] md:text-[2.05rem]">{item.role}</h3>
+          <p className="text-sm font-semibold text-[#1f4fc9]">{item.company}</p>
+          <ul className="mt-3 space-y-1.5 pl-5 text-sm text-[#364152]">
             {item.achievements.map((achievement) => (
-              <li key={achievement}>{achievement}</li>
+              <li key={achievement} className="list-disc">{achievement}</li>
             ))}
           </ul>
         </li>
