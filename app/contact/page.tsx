@@ -20,7 +20,7 @@ export default function ContactPage() {
             </a>
           </p>
         </div>
-        <form className="space-y-4 rounded-xl border border-steel/20 p-6" aria-label="Contact form">
+        <form className="space-y-4 rounded-xl border border-steel/20 p-6" aria-label="Contact form" action="mailto:shin@sagasiaconsulting.com" method="post" encType="text/plain">
           <label className="block text-sm">
             Name
             <input type="text" className="mt-2 w-full rounded-md border border-gray-300 px-3 py-2" />
