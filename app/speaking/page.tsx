@@ -6,14 +6,11 @@ import { speaking } from "@/data/siteContent";
 
 type GalleryItem = (typeof speaking.gallery)[number];
 
-type CategorizedItem = GalleryItem & {
-  category: "Automotive" | "Healthcare" | "Retail" | "Others";
+type GroupedItem = GalleryItem & {
   year?: number;
   baseTitle: string;
   link?: string;
 };
-
-const categoryOrder: Array<CategorizedItem["category"]> = ["Automotive", "Healthcare", "Retail", "Others"];
 
 function extractYear(title: string): number | undefined {
   const match = title.match(/\b(20\d{2})\b/);
@@ -25,14 +22,6 @@ function normalizeBaseTitle(title: string): string {
     .replace(/\b20\d{2}\b/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
-}
-
-function categorize(title: string): CategorizedItem["category"] {
-  const normalized = title.toLowerCase();
-  if (/(ev|battery|automotive|mobility)/.test(normalized)) return "Automotive";
-  if (/(health|mih|med|care)/.test(normalized)) return "Healthcare";
-  if (/retail/.test(normalized)) return "Retail";
-  return "Others";
 }
 
 function findMatchingLink(baseTitle: string, year?: number): string | undefined {
@@ -53,7 +42,7 @@ function findMatchingLink(baseTitle: string, year?: number): string | undefined 
   return baseMatch?.url;
 }
 
-function GroupTile({ imageUrl, items, expanded, onToggle }: { imageUrl?: string; items: CategorizedItem[]; expanded: boolean; onToggle?: () => void }) {
+function GroupTile({ imageUrl, items, expanded, onToggle }: { imageUrl?: string; items: GroupedItem[]; expanded: boolean; onToggle?: () => void }) {
   const visibleItems = expanded ? items : items.slice(0, 1);
   const showToggle = items.length > 1;
 
@@ -83,57 +72,46 @@ function GroupTile({ imageUrl, items, expanded, onToggle }: { imageUrl?: string;
 export default function SpeakingPage() {
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
 
-  const categorizedItems: CategorizedItem[] = speaking.gallery.map((item) => {
+  const groupedItems: GroupedItem[] = speaking.gallery.map((item) => {
     const year = extractYear(item.title);
     const baseTitle = normalizeBaseTitle(item.title);
     return {
       ...item,
       year,
       baseTitle,
-      category: categorize(item.title),
       link: findMatchingLink(baseTitle, year)
     };
   });
 
-  const byCategory = categoryOrder.map((category) => {
-    const items = categorizedItems.filter((item) => item.category === category);
-    const grouped = Object.values(
-      items.reduce<Record<string, CategorizedItem[]>>((acc, item) => {
-        acc[item.baseTitle] = [...(acc[item.baseTitle] ?? []), item].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
-        return acc;
-      }, {})
-    );
-
-    return { title: category, groups: grouped };
-  });
+  const grouped = Object.values(
+    groupedItems.reduce<Record<string, GroupedItem[]>>((acc, item) => {
+      acc[item.baseTitle] = [...(acc[item.baseTitle] ?? []), item].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+      return acc;
+    }, {})
+  );
 
   return (
     <SectionContainer eyebrow="Voice & Contributions" title="Speaking Engagements" description="Event appearances across ASEAN growth sectors.">
-      <div className="space-y-8">
-        {byCategory.map((section) => (
-          <section key={section.title} className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
-          <h3 className="mb-4 font-serif text-3xl">{section.title}</h3>
-          <div className="grid gap-5 md:grid-cols-3">
-            {section.groups.map((group) => {
-              const latest = group[0];
-              const groupKey = `${section.title}-${latest.baseTitle}`;
-              const expanded = expandedGroups[groupKey] ?? false;
+      <section className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
+        <div className="grid gap-5 md:grid-cols-3">
+          {grouped.map((group) => {
+            const latest = group[0];
+            const groupKey = latest.baseTitle;
+            const expanded = expandedGroups[groupKey] ?? false;
 
-              return (
-                <div key={groupKey} className="space-y-2">
-                  <GroupTile
-                    imageUrl={latest.imageUrl}
-                    items={group}
-                    expanded={expanded}
-                    onToggle={() => setExpandedGroups((prev) => ({ ...prev, [groupKey]: !expanded }))}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          </section>
-        ))}
-      </div>
+            return (
+              <div key={groupKey} className="space-y-2">
+                <GroupTile
+                  imageUrl={latest.imageUrl}
+                  items={group}
+                  expanded={expanded}
+                  onToggle={() => setExpandedGroups((prev) => ({ ...prev, [groupKey]: !expanded }))}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </SectionContainer>
   );
 }
