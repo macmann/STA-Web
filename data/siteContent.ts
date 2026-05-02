@@ -128,14 +128,6 @@ export const speaking = {
       url: "https://healthcareasiamagazine.com/contributor/shin-thant-aung"
     },
     {
-      title: "YCP",
-      url: "https://ycpsolidiance.com/lp/a02"
-    },
-    {
-      title: "Asian Banking and Finance",
-      url: "https://asianbankingandfinance.net/event/asian-banking-finance-and-insurance-asia-summit-thailand-february-18-2025"
-    },
-    {
       title: "Retail Asia",
       url: "https://retailasia.com/contributors?page=9"
     },
@@ -150,10 +142,6 @@ export const speaking = {
     {
       title: "Healthcare Asia (Issuu)",
       url: "https://issuu.com/charlton_media/docs/hca-h1-2023/32"
-    },
-    {
-      title: "Next Continent",
-      url: "https://www.nextcontinent.net/wp-content/uploads/2024/10/Nextcontinent-AI-in-Healthcare-Whitepaper.pdf"
     },
     {
       title: "Healthserv.net",
@@ -188,12 +176,32 @@ export const speaking = {
       url: "https://www.linkedin.com/posts/ycpprofessional_last-february-2025-our-director-shin-ugcPost-7304768744336093185-9940?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACdE1pMBxVsyKXJR-UrNAqdhMsmzvH-onLs"
     },
     {
+      title: "YCP",
+      url: "https://ycpsolidiance.com/lp/a02"
+    },
+    {
+      title: "Asian Banking and Finance",
+      url: "https://asianbankingandfinance.net/event/asian-banking-finance-and-insurance-asia-summit-thailand-february-18-2025"
+    },
+    {
       title: "Phil Healthcare Summit 2024",
       url: "https://www.linkedin.com/posts/ycpprofessional_last-april-18-our-healthcare-expert-and-activity-7188413680118632448-3QkT"
     },
     {
       title: "Healthcare Asia Summit in Singapore",
       url: "https://www.linkedin.com/company/healthcare-asia/"
+    }
+  ],
+  whitepapers: [
+    {
+      title: "AI In Healthcare Next Continent",
+      url: "https://www.nextcontinent.net/wp-content/uploads/2024/10/Nextcontinent-AI-in-Healthcare-Whitepaper.pdf",
+      imageUrl: "https://i.ibb.co/yccKStpd/AI-In-Healthcare-Next-Continent.png"
+    },
+    {
+      title: "Cybersecurity Market in Thailand",
+      url: "https://www.nextcontinent.net/wp-content/uploads/2025/03/Nextcontinent-Cybersecurity-Market-in-Thailand-2025.pdf",
+      imageUrl: "https://i.ibb.co/MxxdcQt3/Cyber-Security-Market-In-Thailand.png"
     }
   ],
   gallery: [
