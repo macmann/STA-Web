@@ -11,9 +11,6 @@ export default function ContactPage() {
       <div className="grid gap-8 md:grid-cols-2">
         <div className="space-y-4 rounded-xl border border-steel/20 bg-mist p-6 text-sm text-steel/85">
           <p>
-            <span className="font-semibold text-ink">Email:</span> {profile.contact.email}
-          </p>
-          <p>
             <span className="font-semibold text-ink">LinkedIn:</span>{" "}
             <a href={profile.contact.linkedin} target="_blank" rel="noreferrer" className="text-accent hover:text-ink">
               linkedin.com/in/shinthantaung
