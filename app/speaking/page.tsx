@@ -103,8 +103,9 @@ export default function SpeakingPage() {
 
   return (
     <SectionContainer eyebrow="Voice & Contributions" title="Speaking Engagements" description="Event appearances across ASEAN growth sectors.">
-      {byCategory.map((section) => (
-        <section key={section.title} className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
+      <div className="space-y-8">
+        {byCategory.map((section) => (
+          <section key={section.title} className="rounded-2xl border border-steel/20 bg-[#dce5f7] p-6">
           <h3 className="mb-4 font-serif text-3xl">{section.title}</h3>
           <div className="grid gap-5 md:grid-cols-3">
             {section.groups.map((group) => {
@@ -132,8 +133,9 @@ export default function SpeakingPage() {
               );
             })}
           </div>
-        </section>
-      ))}
+          </section>
+        ))}
+      </div>
     </SectionContainer>
   );
 }
