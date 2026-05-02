@@ -2,10 +2,7 @@ import { SectionContainer } from "@/components/SectionContainer";
 import { speaking } from "@/data/siteContent";
 
 export default function WhitepapersPage() {
-  const featured = [
-    { ...speaking.publications[6], imageUrl: speaking.gallery[7]?.imageUrl },
-    { ...speaking.publications[7], imageUrl: "https://i.ibb.co/v4Yw2w3/Nextcontinent-AI-in-Healthcare-Whitepaper.png" }
-  ];
+  const featured = speaking.whitepapers;
 
   return (
     <SectionContainer eyebrow="Voice & Contributions" title="Whitepaper Publications" description="Strategy papers and sector thought leadership.">
