@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { profile } from "@/data/siteContent";
 
 const navItems = [
@@ -20,13 +21,28 @@ const voiceItems = [
 
 export function Navbar() {
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-40 border-b border-accent/30 bg-ink/95 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3 md:px-10">
-        <Link href="/" className="font-serif text-xl leading-none text-white md:text-2xl">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6 md:px-10">
+        <Link href="/" className="pr-4 font-serif text-lg leading-none text-white sm:text-xl md:text-2xl">
           {profile.name}
         </Link>
+        <button
+          type="button"
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-nav"
+          aria-label="Toggle navigation"
+          className="rounded-md border border-white/25 px-3 py-1 text-sm text-white md:hidden"
+          onClick={() => setMobileMenuOpen((open) => !open)}
+        >
+          Menu
+        </button>
         <nav>
           <ul className="hidden items-center gap-6 md:flex">
             {navItems.map(([label, href]) => {
@@ -62,6 +78,45 @@ export function Navbar() {
           </ul>
         </nav>
       </div>
+      <nav id="mobile-nav" className={`${mobileMenuOpen ? "block" : "hidden"} border-t border-white/15 px-4 pb-4 md:hidden`}>
+        <ul className="space-y-1 pt-3">
+          {navItems.map(([label, href]) => {
+            const active = pathname === href;
+            return (
+              <li key={`mobile-${href}`}>
+                <Link
+                  href={href}
+                  className={`block rounded-md px-3 py-2 text-sm ${active ? "bg-white/10 text-white" : "text-white/80 hover:bg-white/10 hover:text-white"}`}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
+          <li className="mt-3 px-3 text-xs uppercase tracking-[0.14em] text-white/60">Voice & Contributions</li>
+          {voiceItems.map(([label, href]) => {
+            const active = pathname === href;
+            return (
+              <li key={`mobile-${href}`}>
+                <Link
+                  href={href}
+                  className={`block rounded-md px-3 py-2 text-sm ${active ? "bg-white/10 text-white" : "text-white/80 hover:bg-white/10 hover:text-white"}`}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
+          <li className="pt-2">
+            <Link
+              href="/contact"
+              className={`block rounded-md px-3 py-2 text-sm ${pathname === "/contact" ? "bg-white/10 text-white" : "text-white/80 hover:bg-white/10 hover:text-white"}`}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
