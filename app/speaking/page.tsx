@@ -126,7 +126,7 @@ export default function SpeakingPage() {
   const others: EngagementCard[] = [
     {
       title: "Insurance Asia Forum 2024",
-      imageUrl: findGalleryImage("2024 Insurance Asia"),
+      imageUrl: "https://i.ibb.co/j9MyMQjm/Insurance-Asia-Forum-2024.png",
       linkText: "2024 Insurance Asia Forum",
       href: findEngagementLink("Insurance Asia")
     },
