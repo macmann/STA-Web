@@ -43,8 +43,8 @@ export function Navbar() {
         >
           Menu
         </button>
-        <nav>
-          <ul className="hidden items-center gap-6 md:flex">
+        <nav className="hidden md:block">
+          <ul className="flex items-center gap-6">
             {navItems.map(([label, href]) => {
               const active = pathname === href;
               return (
