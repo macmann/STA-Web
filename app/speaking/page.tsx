@@ -51,19 +51,19 @@ export default function SpeakingPage() {
   const automotive: EngagementCard[] = [
     {
       title: "Asia EV Technology Summit 2023",
-      imageUrl: findGalleryImage("Asia EV Tech Summit 2023"),
+      imageUrl: "https://i.ibb.co/27F8xt1D/Asia-EV-Technology-Summit-2023-2.jpg",
       linkText: "Asia EV Technology Summit 2023",
       href: findEngagementLink("Asia EV")
     },
     {
       title: "3rd Asia EV Technology Summit Thailand 2025",
-      imageUrl: findGalleryImage("Asia EV Tech Summit 2025"),
+      imageUrl: "https://i.ibb.co/fYLN0VQZ/3rd-Asia-EV-Technology-Summit-Thailand-2025.jpg",
       linkText: "3rd Asia EV Technology Summit Thailand 2025",
       href: findEngagementLink("3rd ASEAN Battery Technology Conference 2025")
     },
     {
       title: "ASEAN Battery Technology Conference 2025 - Phuket",
-      imageUrl: findGalleryImage("ASEAN Battery Technology Conference"),
+      imageUrl: "https://i.ibb.co/SXZ8xbq8/ASEAN-Battery-Technology-Conference-2025-Phuket.png",
       linkText: "ASEAN Battery Technology Conference 2025 - Phuket",
       href: findEngagementLink("battery")
     }
