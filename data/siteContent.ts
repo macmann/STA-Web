@@ -32,6 +32,16 @@ export const biography = {
 export const experiences = [
   {
     period: "Current",
+    role: "Management & Strategy Consultant",
+    company: "Independent Advisory",
+    achievements: [
+      "Lead strategy and market intelligence engagements across ASEAN and broader APAC growth markets.",
+      "Develop market entry strategies and assess expansion opportunities for corporate and investor clients.",
+      "Translate strategic priorities into execution roadmaps through primary research, competitive intelligence, and commercial validation."
+    ]
+  },
+  {
+    period: "Previous",
     role: "Director",
     company: "YCP Solidiance",
     achievements: [
