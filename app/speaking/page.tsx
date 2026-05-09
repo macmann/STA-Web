@@ -72,13 +72,13 @@ export default function SpeakingPage() {
   const healthcare: EngagementCard[] = [
     {
       title: "Healthcare Asia Forum Bangkok 2023",
-      imageUrl: findGalleryImage("Healthcare Asia Magazine"),
+      imageUrl: findGalleryImage("Healthcare Asia Forum Bangkok 2023"),
       linkText: "Healthcare Asia Magazine",
       href: findEngagementLink("healthcare asia")
     },
     {
       title: "Healthcare Asia Summit 2024 (Singapore)",
-      imageUrl: findGalleryImage("Healthcare Asia Summit"),
+      imageUrl: findGalleryImage("Healthcare Asia Summit 2024 Singapore"),
       linkText: "Healthcare Asia Summit 2024",
       href: findEngagementLink("healthcare asia summit")
     },
@@ -90,13 +90,13 @@ export default function SpeakingPage() {
     },
     {
       title: "Malaysia International Healthcare (MIH) Mega Trends 2024",
-      imageUrl: findGalleryImage("MIH Megatrends 2024"),
+      imageUrl: findGalleryImage("Malaysia International Healthcare (MIH) Mega Trends 2024"),
       linkText: "Malaysia International Healthcare (MIH) Mega Trends 2024",
       href: findEngagementLink("MIH")
     },
     {
       title: "Malaysia International Healthcare (MIH) Mega Trends 2025",
-      imageUrl: findGalleryImage("MIH Megatrends 2025"),
+      imageUrl: findGalleryImage("Malaysia International Healthcare (MIH) Mega Trends 2025"),
       linkText: "Malaysia International Healthcare (MIH) Mega Trends 2025",
       href: findEngagementLink("MIH")
     },
