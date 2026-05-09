@@ -229,20 +229,32 @@ export const speaking = {
       imageUrl: "https://i.ibb.co/h1c9G1T3/Asia-EV-Tech-Summit-2025.png"
     },
     {
+      title: "Healthcare Asia Forum Bangkok 2023",
+      imageUrl: "https://i.ibb.co/dwqX6j0T/Healthcare-Asia-Forum-Bangkok-2023.png"
+    },
+    {
       title: "Healthcare Asia Magazine",
-      imageUrl: "https://i.ibb.co/bjXBpW12/Healthcare-Asia-Magazine.png"
+      imageUrl: "https://i.ibb.co/dwqX6j0T/Healthcare-Asia-Forum-Bangkok-2023.png"
+    },
+    {
+      title: "Healthcare Asia Summit 2024 Singapore",
+      imageUrl: "https://i.ibb.co/jvL6pFNg/Healthcare-Asia-Summit-2024-Singapore.png"
     },
     {
       title: "Healthcare Asia Summit",
-      imageUrl: "https://i.ibb.co/CK2cfzRr/Healthcare-Asia-Summit.png"
+      imageUrl: "https://i.ibb.co/jvL6pFNg/Healthcare-Asia-Summit-2024-Singapore.png"
     },
     {
       title: "Healthcare Asia",
       imageUrl: "https://i.ibb.co/SwHLFHZH/Healthcare-Asia.png"
     },
     {
+      title: "Malaysia International Healthcare (MIH) Mega Trends 2024",
+      imageUrl: "https://i.ibb.co/5h2dGqwC/Malaysia-International-Healthcare-MIH-Mega-Trends-2024.jpg"
+    },
+    {
       title: "MIH Megatrends 2024",
-      imageUrl: "https://i.ibb.co/C3gcFdy5/MIH-Megatrends-2024.jpg"
+      imageUrl: "https://i.ibb.co/5h2dGqwC/Malaysia-International-Healthcare-MIH-Mega-Trends-2024.jpg"
     },
     {
       title: "Retail Asia 2",
@@ -253,8 +265,12 @@ export const speaking = {
       imageUrl: "https://i.ibb.co/1YJ5vBw5/Retail-Asia-Summit-Singapore-2023.webp"
     },
     {
+      title: "Malaysia International Healthcare (MIH) Mega Trends 2025",
+      imageUrl: "https://i.ibb.co/67b3L05G/Malaysia-International-Healthcare-MIH-Mega-Trends-2025.jpg"
+    },
+    {
       title: "MIH Megatrends 2025",
-      imageUrl: "https://i.ibb.co/6cvL5RjK/MIH-Megatrends-2025.jpg"
+      imageUrl: "https://i.ibb.co/67b3L05G/Malaysia-International-Healthcare-MIH-Mega-Trends-2025.jpg"
     }
   ]
 };
