@@ -163,6 +163,10 @@ export const speaking = {
   ],
   engagements: [
     {
+      title: "Asia EV Technology Summit 2023",
+      url: "https://ycp.com/insights/article/integrating-ADAS-technology-in-electric-cars"
+    },
+    {
       title: "3rd ASEAN Battery Technology Conference 2025",
       url: "https://www.linkedin.com/posts/ycpprofessional_ycp-evtech-batteryinnovation-ugcPost-7373236386855862272-00h3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACdE1pMBxVsyKXJR-UrNAqdhMsmzvH-onLs"
     },
